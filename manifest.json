@@ -1,0 +1,139 @@
+{
+	"extension": 
+	{
+		"name": "DataModel snippet",
+		"version": "1.0.0",
+		"description": "Snippet for Datamodel",
+		"icon": "ModelEditor.png",
+		"compatibleBuildVersion": 0,
+		
+		"senders": [
+					{
+						"location": "codeEditorToolbar",
+						"title": "DataModel",
+						"icon": "ModelEditor.png",
+						"popup": "yes",
+						"menu": [
+							{"actionName": "newDataClass"},
+							{"actionName": "newAttribute"},
+							{"actionName": "newKeyAttribute"},
+							{"actionName": "newFunction"},
+							{"actionName": "newPublicFunction"},
+							{"actionName": "newEntityFunction"},
+							{"actionName": "newPublicEntityFunction"},
+							{"actionName": "newEvent"},
+						]
+					}
+					
+		],
+		
+		"actions": [
+					{
+						"name": "newDataClass",
+						"title": "new DataClass",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "c"
+						}
+					},
+					{
+						"name": "newAttribute",
+						"title": "new Attribute",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "a"
+						}
+					},
+					{
+						"name": "newKeyAttribute",
+						"title": "new Primary Key",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "k"
+						}
+					},
+					{
+						"name": "newFunction",
+						"title": "new DataClass Method",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "m"
+						}
+					},
+					{
+						"name": "newPublicFunction",
+						"title": "new public DataClass Method",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "yes",
+							"key" : "m"
+						}
+					},
+					{
+						"name": "newEntityFunction",
+						"title": "new Entity Method",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "e"
+						}
+					},
+					{
+						"name": "newPublicEntityFunction",
+						"title": "new public Entity Method",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "yes",
+							"key" : "e"
+						}
+					},
+					{
+						"name": "newEvent",
+						"title": "new Event",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						],
+						"shortcut": {
+							"shortcutKey" : "yes",
+							"alternateKey" : "yes",
+							"shiftKey" : "no",
+							"key" : "v"
+						}
+					}
+		],
+		
+		"lifetime": "application_lifetime"
+	}
+}
